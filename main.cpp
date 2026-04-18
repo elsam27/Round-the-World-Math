@@ -50,7 +50,7 @@ int main() {
     string userName = helloUser(language);
 
     string power;
-    cout << "\nChoose the power you'd like to use in the game:\n";
+    cout << "\nChoose your power:\n";
     cout << "1. Multiplier 2x\n";
     cout << "2. Skip 1 question\n";
     cout << "3. Earn 10 bonus points\n";
@@ -58,7 +58,7 @@ int main() {
     cin >> power;
 
     cout << "\n--- GAME START ---\n";
-    cout << "Note: Powers start after 10 points and activate every OTHER 10 points!\n\n";
+    cout << "Note: Powers start after 10 points and activate every OTHER 10 points!\n";
 
     int score = 0;
     bool usedPower = false;
@@ -104,7 +104,7 @@ bool askQues(string language, string power, int &score, bool &usedPower) {
         if (operation == 0) { cout << "What is " << a << " + " << b << "? "; correct = a + b; }
         else if (operation == 1) { cout << "What is " << a << " - " << b << "? "; correct = a - b; }
         else if (operation == 2) { cout << "What is " << a << " x " << b << "? "; correct = a * b; }
-        else { if (b == 0) b = 1; cout << "What is " << a << " / " << b << "? (without the decimal- just the whole number)"; correct = a / b; }
+        else { if (b == 0) b = 1; cout << "What is " << a << " / " << b << "? "; correct = a / b; }
     } else {
         if (operation == 0) { cout << "Cuanto es " << a << " + " << b << "? "; correct = a + b; }
         else if (operation == 1) { cout << "Cuanto es " << a << " - " << b << "? "; correct = a - b; }
@@ -124,7 +124,7 @@ bool askQues(string language, string power, int &score, bool &usedPower) {
     if (answer == correct) {
         int gain = 5;
         if (powerActive) {
-            if (power == "1") { gain = 10; cout << ">> 2X MULTIPLIER ACTIVE!\n" << "(Points: " << gain << ")\n"; }
+            if (power == "1") { gain = 10; cout << ">> 2X MULTIPLIER ACTIVE!" << " (Points: " << gain << ")\n"; }
             else if (power == "3") { gain = 15; cout << ">> +10 BONUS ACTIVE! (Points: " << gain << ")\n"; }
             else if (power == "2") { cout << "Correct! +5 points (Skip ready!)\n"; }
         } else {
@@ -134,7 +134,7 @@ bool askQues(string language, string power, int &score, bool &usedPower) {
 
         // --- NEW: DISPLAY FACT ---
         int idx = rand() % numFacts;
-        if (language == "English") cout << "\nFUN FACT: " << engFacts[idx] << "\n" <<endl;
+        if (language == "English") cout << "\nFUN FACT: \n" << engFacts[idx] << endl;
         else cout << "DATO CURIOSO: " << spanFacts[idx] << endl;
 
         return true;
@@ -143,7 +143,7 @@ bool askQues(string language, string power, int &score, bool &usedPower) {
     // --- SKIP LOGIC ---
     if (power == "2" && powerActive && !usedPower) {
         usedPower = true;
-        cout << ">> Wrong! BUT-your SKIP power saved you! (Power used up)\n";
+        cout << ">> WRONG! But your SKIP power saved you! (Power used up)\n";
         return true;
     }
 
