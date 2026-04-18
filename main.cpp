@@ -10,6 +10,8 @@ string helloUser(string language);
 bool askQues(string language, string power, int &score);
 int main() {
     srand(time(0));
+    cout << "Enter 1 for English\n";
+    cout << "Presiona 2 for Espanol\n";
     string language = selectLanguage();
     helloUser(language);
     string power;
