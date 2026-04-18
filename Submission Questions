@@ -2,7 +2,8 @@ Responses to the Devpost Submission Questions:
 
 🔥 HACKMESA Project Submission Outline 1. Project Name
 A short, catchy title that reflects your project:
-MathQuest
+
+Round the World Math
 
 2. Reason for Making the Project (Inspiration/Problem Statement)
 What inspired your team to build this?
@@ -28,17 +29,9 @@ Any special features, unique innovations, or standout aspects?
 //filler
 
 4. Tech Stack
-List of tools, languages, and frameworks used. Examples:
+List of tools, languages, and frameworks used. 
 
-Frontend: React, Next.js, Tailwind CSS
-
-Backend: Node.js, Express, Supabase, Firebase
-
-Database: PostgreSQL, MongoDB
-
-Other Tools: Docker, OpenAI API, Figma
-
-//filler
+// We used Google Gemini to help us generate code for what we wanted programmed from our idea. Our code was written in C++ and we used the IDE CLion from JetBrains. 
 
 5. Source Code / Devpost Link
 GitHub or GitLab repository (include frontend/backend links if separate)
