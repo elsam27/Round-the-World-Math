@@ -22,7 +22,7 @@ string facts[EngFacts] = {
 };
 const int SpanFacts = 10; // Number of facts in your placeholder
 
-// Placeholder array for facts
+
 string facts[SpanFacts] = {
     "En países como Bangladesh, las escuelas en barcos llevan educación a los niños durante las inundaciones.",
     "Los científicos pueden convertir el dióxido de carbono en proteína en polvo usando microbios y electricidad.",
