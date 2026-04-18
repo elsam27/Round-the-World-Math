@@ -15,7 +15,7 @@ The game aims to teach arithmetic skills to students, while also merging fun fac
 **Functionality**
 
 User is prompted for their name for personalization.
-User selects a language (English, Spanish, French).
+User selects a language (English and Spanish).
 The game presents randomized arithmetic questions.
 Correct answers show a congratulatory message and a cultural fun fact in the selected language.
 Incorrect answers show an encouraging message.
